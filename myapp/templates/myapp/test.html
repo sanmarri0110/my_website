@@ -1,0 +1,10 @@
+{% extends "myapp/layout.html" %}
+
+{% block content %}
+
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+        <h1>Santosh Kumar Marri</h1>
+        <p>The IT Professional!</p> 
+    </div>
+    <span class="message"> Hello there, {{ name }}!</span> It's {{ date | date:"l, d F, Y" }} at {{ date | time:"H:i:s" }}
+{% endblock %}
